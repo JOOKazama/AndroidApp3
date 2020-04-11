@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:focusableInTouchMode="true">
+
+
+    <Button
+            android:text="@string/send"
+            android:layout_width="219dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/button"
+            android:layout_marginStart="90dp"
+            android:layout_marginTop="150dp"
+            android:layout_marginLeft="90dp"/>
+    <EditText
+            android:layout_width="376dp"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:gravity="start|top"
+            android:ems="10"
+            android:id="@+id/text"
+            android:autofillHints=""
+            android:hint="@string/name"
+            android:clickable="true"
+            android:focusableInTouchMode="true"
+            tools:ignore="LabelFor"
+            android:layout_marginLeft="20dp"
+            android:focusable="true"
+            android:layout_marginStart="20dp"/>
+    <EditText
+            android:layout_width="376dp"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:gravity="start|top"
+            android:ems="10"
+            android:id="@+id/text2"
+            android:layout_marginTop="50dp"
+            android:autofillHints=""
+            android:hint="@string/address"
+            android:clickable="true"
+            android:focusableInTouchMode="true"
+            tools:ignore="LabelFor"
+            android:layout_marginLeft="20dp"
+            android:focusable="true"
+            android:layout_marginStart="20dp"/>
+    <EditText
+            android:layout_width="376dp"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:gravity="start|top"
+            android:ems="10"
+            android:id="@+id/text3"
+            android:autofillHints=""
+            android:hint="@string/url"
+            android:clickable="true"
+            android:focusableInTouchMode="true"
+            tools:ignore="LabelFor"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="100dp"
+            android:focusable="true"
+            android:layout_marginStart="20dp"/>
+
+</FrameLayout>

@@ -7,6 +7,12 @@ public class Contact
     String url;
 
     public Contact() {}
+    public Contact(String name, String address, String url)
+    {
+        this.name=name;
+        this.address=address;
+        this.url=url;
+    }
     public String getName() { return name; }
     public void setName(String name) { this.name = name; }
     public String getAddress() { return address; }

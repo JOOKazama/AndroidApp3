@@ -4,7 +4,6 @@
              android:layout_height="match_parent"
              android:focusableInTouchMode="true">
 
-
     <Button
             android:text="@string/send"
             android:layout_width="219dp"

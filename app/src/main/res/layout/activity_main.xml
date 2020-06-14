@@ -27,9 +27,10 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.933"
-            tools:ignore="MissingConstraints"
+            tools:ignore="MissingConstraints,OnClick"
             android:id="@+id/floating"
             app:srcCompat="@android:drawable/ic_menu_save"
-            android:focusable="true" app:layout_constraintHorizontal_bias="0.498"/>
+            android:focusable="true"
+            app:layout_constraintHorizontal_bias="0.498" android:onClick="Click"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

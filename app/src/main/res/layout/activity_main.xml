@@ -16,7 +16,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             tools:ignore="MissingConstraints"
             app:layout_constraintVertical_bias="0.0"
-            android:id="@+id/view"/>
+            android:id="@+id/recycler_view"/>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:layout_width="wrap_content"
@@ -31,6 +31,7 @@
             android:id="@+id/floating"
             app:srcCompat="@android:drawable/ic_menu_save"
             android:focusable="true"
-            app:layout_constraintHorizontal_bias="0.498" android:onClick="Click"/>
+            app:layout_constraintHorizontal_bias="0.498"
+            android:onClick="Click"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

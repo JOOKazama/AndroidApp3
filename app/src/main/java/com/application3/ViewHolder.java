@@ -16,8 +16,8 @@ public class ViewHolder extends RecyclerView.ViewHolder
     {
         super(itemView);
         image=itemView.findViewById(R.id.image);
-        name=itemView.findViewById(R.id.text);
-        address=itemView.findViewById(R.id.text2);
+        name=itemView.findViewById(R.id.name);
+        address=itemView.findViewById(R.id.address);
     }
 
     public void setName(String name){ this.name.setText(name); }

@@ -9,27 +9,27 @@ import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity implements DialogListener
 {
-    RecyclerView v;
-    ContactAdapter a;
+    RecyclerView recycler_view;
+    ContactAdapter contact_adapter;
 
     @Override protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        v=findViewById(R.id.view);
-        ArrayList<Contact>c=new ArrayList<>();
+        recycler_view=findViewById(R.id.recycler_view);
+        ArrayList<Contact>contacts=new ArrayList<>();
 
-        a=new ContactAdapter(c);
-        v.setAdapter(a);
-        v.setLayoutManager(new LinearLayoutManager(this));
+        contact_adapter=new ContactAdapter(contacts);
+        recycler_view.setAdapter(contact_adapter);
+        recycler_view.setLayoutManager(new LinearLayoutManager(this));
     }
 
-    @Override public void onFinishAddDialog(Contact c) { a.addContact(c); }
+    @Override public void onFinishAddDialog(Contact c) { contact_adapter.addContact(c); }
 
     public void Click(View view)
     {
-        FragmentManager fm=getSupportFragmentManager();
+        FragmentManager fragment_manager=getSupportFragmentManager();
         FragmentDialog addAnimalFragment=FragmentDialog.newInstance();
-        addAnimalFragment.show(fm, "Added!");
+        addAnimalFragment.show(fragment_manager, "Added!");
     }
 }

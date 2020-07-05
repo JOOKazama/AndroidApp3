@@ -12,10 +12,10 @@ import androidx.fragment.app.DialogFragment;
 
 public class FragmentDialog extends DialogFragment implements View.OnClickListener
 {
-    private EditText text;
-    private EditText text2;
-    private EditText text3;
-    DialogListener listener;
+    private EditText name;
+    private EditText address;
+    private EditText url;
+    DialogListener dialog_listener;
 
     public static FragmentDialog newInstance() { return new FragmentDialog(); }
 
@@ -26,26 +26,26 @@ public class FragmentDialog extends DialogFragment implements View.OnClickListen
     @Override public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState)
     {
         super.onViewCreated(view, savedInstanceState);
-        text=view.findViewById(R.id.text);
-        text2=view.findViewById(R.id.text2);
-        text3=view.findViewById(R.id.text3);
-        Button button=view.findViewById(R.id.button);
-        button.setOnClickListener(this);
+        name=view.findViewById(R.id.name);
+        address=view.findViewById(R.id.address);
+        url=view.findViewById(R.id.url);
+        Button button_send=view.findViewById(R.id.button_send);
+        button_send.setOnClickListener(this);
     }
 
     @Override public void onAttach(@NonNull Context context)
     {
         super.onAttach(context);
-        listener=(DialogListener)context;
+        dialog_listener=(DialogListener)context;
     }
 
     @Override public void onClick(View v)
     {
         Contact contact=new Contact();
-        contact.setName(text.getText().toString());
-        contact.setAddress(text2.getText().toString());
-        contact.setUrl(text3.getText().toString());
-        listener.onFinishAddDialog(contact);
+        contact.setName(name.getText().toString());
+        contact.setAddress(address.getText().toString());
+        contact.setUrl(url.getText().toString());
+        dialog_listener.onFinishAddDialog(contact);
         v.clearFocus();
         v.setFocusable(false);
         dismiss();

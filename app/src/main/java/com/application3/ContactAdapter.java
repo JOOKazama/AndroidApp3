@@ -8,7 +8,7 @@ import java.util.ArrayList;
 public class ContactAdapter extends RecyclerView.Adapter<ViewHolder>
 {
     private final ArrayList<Contact>contacts;
-    public ContactAdapter(ArrayList<Contact> contacts) { this.contacts=contacts; }
+    public ContactAdapter(ArrayList<Contact>contacts) { this.contacts=contacts; }
 
     @NonNull @Override public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType)
     { return new ViewHolder(LayoutInflater.from(parent.getContext()).inflate(R.layout.contact, parent, false)); }

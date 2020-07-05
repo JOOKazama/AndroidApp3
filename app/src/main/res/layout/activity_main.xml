@@ -5,7 +5,7 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".MainActivity">
+        tools:context=".Main.MainActivity">
 
     <androidx.recyclerview.widget.RecyclerView
             android:layout_width="413dp"
@@ -28,7 +28,7 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.933"
             tools:ignore="MissingConstraints,OnClick"
-            android:id="@+id/floating"
+            android:id="@+id/floating_button_add"
             app:srcCompat="@android:drawable/ic_menu_save"
             android:focusable="true"
             app:layout_constraintHorizontal_bias="0.498"

@@ -1,4 +1,4 @@
-package com.application3;
+package com.All.RecyclerViewLogic;
 import android.content.Context;
 import android.os.Build;
 import android.os.Bundle;
@@ -9,6 +9,8 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.annotation.RequiresApi;
 import androidx.fragment.app.DialogFragment;
+import com.All.Contact.Contact;
+import com.All.R;
 
 public class FragmentDialog extends DialogFragment implements View.OnClickListener
 {

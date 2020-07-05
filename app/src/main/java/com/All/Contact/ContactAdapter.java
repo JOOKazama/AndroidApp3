@@ -1,8 +1,11 @@
-package com.application3;
+package com.All.Contact;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+import com.All.R;
+import com.All.RecyclerViewLogic.ViewHolder;
+
 import java.util.ArrayList;
 
 public class ContactAdapter extends RecyclerView.Adapter<ViewHolder>

@@ -1,4 +1,4 @@
-package com.application3;
+package com.All.Contact;
 
 public class Contact
 {
